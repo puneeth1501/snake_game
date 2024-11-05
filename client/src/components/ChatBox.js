@@ -1,39 +1,4 @@
-// import React, { useState } from 'react';
 
-// const ChatBox = ({ socket, gameId, playerName }) => {
-//     const [message, setMessage] = useState('');
-
-//     const handleSend = (e) => {
-//         e.preventDefault();
-//         if (message.trim()) {
-//             socket.emit('sendMessage', {
-//                 gameId,
-//                 message: message.trim(),
-//                 sender: playerName
-//             });
-//             setMessage('');
-//         }
-//     };
-
-//     return (
-//         <div className="chat-box">
-//             <div className="messages">
-//                 {/* Messages will be displayed here */}
-//             </div>
-//             <form onSubmit={handleSend}>
-//                 <input
-//                     type="text"
-//                     value={message}
-//                     onChange={(e) => setMessage(e.target.value)}
-//                     placeholder="Type a message..."
-//                 />
-//                 <button type="submit">Send</button>
-//             </form>
-//         </div>
-//     );
-// };
-
-// export default ChatBox;
 import React, { useState, useRef, useEffect } from 'react';
 
 function ChatBox({ socket, gameId, playerName }) {
