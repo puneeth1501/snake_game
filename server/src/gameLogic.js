@@ -10,7 +10,7 @@ class Game {
 
     static get RULES() {
         return {
-            MAX_PLAYERS: 4,
+            MAX_PLAYERS: 2,
             SNAKES_AND_LADDERS: {
                 // Ladders
                 4: 14,
